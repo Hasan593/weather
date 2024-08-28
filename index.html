@@ -5,18 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather</title>
         <link rel="stylesheet" href="./style.css">
+        <!-- font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
-        <h1 class="text-3xl font-bold text-green-700">Md Hasan Uddin</h1>
-        <section>
-            <div>
-                <div>
-                    <h1 class="font-bold"><span class="text-green-500">W</span>eather</h1>
-                    <h1 class="font-bold -mt-2">Dashboar<span class="text-blue-500">d</span></h1>
+        <section class="bg-[url('./assets/image/pexels-photo-311039.webp')] bg-cover h-lvh">
+            <div class="w-[95%] m-auto pt-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <i class="fa-solid fa-cloud-sun fa-2xl" style="color: #0800ff;"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-lg"><span class="text-red-500">W</span>eather</h1>
+                            <h1 class="font-bold text-lg -mt-2">Dashboar<span class="text-red-500">d</span></h1>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="text" name="" placeholder="Search Location" id="" class="relative px-3 p py-1 rounded-md outline-none bg-slate-200 hover:bg-white">
+                        <i class="fa-solid fa-magnifying-glass absolute right-10"></i>
+                    </div>
                 </div>
                 <div></div>
             </div>
-            <div></div>
         </section>
     </body>
 </html>
