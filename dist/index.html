@@ -4,9 +4,71 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather</title>
-      <link rel="stylesheet" crossorigin href="/assets/index-DRoGteR4.css">
+        <!-- font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="shortcut icon" href="/assets/favicon-D6KfLYyU.ico" type="image/x-icon">
+      <script type="module" crossorigin src="/assets/index-Cpseqxes.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-B3sTsPPN.css">
     </head>
     <body>
-        <h1 class="text-3xl font-bold text-green-700">Md Hasan Uddin</h1>
+        <section id="background" class="bg-[url('./assets/background/pexels-photo-311039.webp')] bg-cover h-lvh relative">
+            <div class="w-[95%] m-auto pt-4">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <i class="fa-solid fa-cloud-sun fa-2xl" style="color: #0800ff;"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-lg"><span class="text-red-500">W</span>eather</h1>
+                            <h1 class="font-bold text-lg -mt-2">Dashboar<span class="text-red-500">d</span></h1>
+                        </div>
+                    </div>
+                    <div>
+                       <form action="" id="form" class="flex items-center">
+                            <input type="search" name="search-input" placeholder="Search Location" id="form-data" class="relative px-3 p py-1 rounded-md outline-none bg-slate-200 hover:bg-white">
+                            <i class="fa-solid fa-magnifying-glass absolute right-10"></i>
+                       </form>
+                    </div>
+                </div>
+
+                <div class="w-[680px] h-[360px] bg-zinc-600 bg-opacity-30 rounded-md flex px-6 pt-16 absolute right-[110px] top-[140px]">
+                    <div class="text-gray-900 w-1/2 mr-16">
+                        <div class="flex gap-2">
+                            <img id="weather-icon" class="h-14" src="" alt="Weather Icon">
+                            <p class="flex items-end" id="haze"></p>
+                        </div>
+                        <h1 id="temp" class="font-bold text-3xl">00°C</h1>
+                        <p id="feel" class="text-gray-700">Feels_Like: 36.0°</p>
+                        <i class="fa-solid fa-location-arrow my-2"></i> <span id="city-name" class="font-bold">Rajshahi</span>
+                        <p class="font-bold">09:12 pm-wednesday August 28, 2024</p>
+                    </div>
+                    <div class="w-[45%] space-y-3 font-bold">
+                        <p class="text-center font-bold" id="climate"></p>
+                        <div class="flex justify-between">
+                            <P>Temp max</P>
+                            <p id="max-temp">25.93° <i class="fa-solid fa-temperature-high"></i></p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Temp min</p>
+                            <p id="min-temp">22.07°C <i class="fa-solid fa-temperature-high"></i></p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Humadity</p>
+                            <p id="humidity">51% <i class="fa-solid fa-droplet"></i></p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Cloudy</p>
+                            <p>2% <i class="fa-solid fa-cloud" style="color: #1750fc;"></i></p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Wind</p>
+                            <p id="wind">3.9km/h <i class="fa-solid fa-wind"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </body>
 </html>
